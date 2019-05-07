@@ -1,6 +1,6 @@
 package help
 
-import "github.com/qor/admin"
+import "github.com/itech-eng/admin"
 
 type controller struct {
 }

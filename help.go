@@ -8,9 +8,9 @@ import (
 	"strings"
 
 	"github.com/jinzhu/gorm"
-	"github.com/qor/admin"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
+	"github.com/itech-eng/admin"
+	"github.com/itech-eng/qor"
+	"github.com/itech-eng/qor/resource"
 )
 
 var Global = "dashboard"
@@ -138,7 +138,7 @@ func (qorHelpEntry *QorHelpEntry) ConfigureQorResource(res resource.Resourcer) {
 
 		res.ShowAttrs("Body")
 
-		Admin.RegisterViewPath("github.com/qor/help/views")
+		Admin.RegisterViewPath("github.com/itech-eng/help/views")
 		Admin.RegisterResourceRouters(res, "create", "update", "read", "delete")
 
 		Admin.RegisterFuncMap("get_help_category_name", func(param string, context *admin.Context) string {
